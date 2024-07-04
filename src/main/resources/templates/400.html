@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>400 Bad Request</title>
+</head>
+<body>
+<div class="container">
+    <div class="text-center">
+        <h1 class="display-4">400 Bad Request</h1>
+
+        <p th:if="${errorMessage}" class="lead text-danger">
+            <strong th:text="${errorMessage}"></strong>
+        </p>
+    </div>
+</div>
+</body>
+</html>
