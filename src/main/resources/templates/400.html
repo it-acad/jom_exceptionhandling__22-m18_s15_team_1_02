@@ -8,12 +8,15 @@
     <title>400 Bad Request</title>
 </head>
 <body>
-<h1>400 Bad Request</h1>
-<p th:if="${message}">
-    <strong th:text="${message}"></strong>
-</p>
-<ul th:if="${errors}">
-    <li th:each="error : ${errors}" th:text="${error}"></li>
-</ul>
+<div class="container">
+    <div class="text-center">
+        <h1 class="display-4">400 Bad Request</h1>
+
+        <!-- Display general error message -->
+        <p th:if="${message}" class="lead text-danger">
+            <strong th:text="${message}"></strong>
+        </p>
+    </div>
+</div>
 </body>
 </html>
