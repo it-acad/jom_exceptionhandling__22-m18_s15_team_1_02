@@ -3,6 +3,7 @@ package com.softserve.itacademy.service.impl;
 import com.softserve.itacademy.model.Role;
 import com.softserve.itacademy.repository.RoleRepository;
 import com.softserve.itacademy.service.RoleService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -10,13 +11,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class RoleServiceImpl implements RoleService {
 
-    private RoleRepository roleRepository;
-
-    public RoleServiceImpl(RoleRepository roleRepository) {
-        this.roleRepository = roleRepository;
-    }
+    private final RoleRepository roleRepository;
 
     @Override
     public Role create(Role role) {
