@@ -8,12 +8,12 @@
     <title>400 Bad Request</title>
 </head>
 <body>
-    <h1>400 Bad Request</h1>
-    <p th:if="${mesage}">
-        <strong th:text="${message}"></strong>
-    </p>
-    <ul th:if="${errors}">
-        <li th:each="error : ${errors}" th:text="${error}"></li>
-    </ul>
+<h1>400 Bad Request</h1>
+<p th:if="${message}">
+    <strong th:text="${message}"></strong>
+</p>
+<ul th:if="${errors}">
+    <li th:each="error : ${errors}" th:text="${error}"></li>
+</ul>
 </body>
 </html>
