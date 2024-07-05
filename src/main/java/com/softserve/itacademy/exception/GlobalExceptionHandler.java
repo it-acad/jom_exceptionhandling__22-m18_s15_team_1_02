@@ -46,5 +46,4 @@ public class GlobalExceptionHandler {
             default: return "500";
         }
     }
-
 }
