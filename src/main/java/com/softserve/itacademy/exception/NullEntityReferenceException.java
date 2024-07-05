@@ -1,8 +1,8 @@
 package com.softserve.itacademy.exception;
 
-public class NullEntityReferenceException extends Exception {
+public class NullEntityReferenceException extends RuntimeException {
     public NullEntityReferenceException() {
-        super("Reference to an entity is null");
+        super();
     }
 
     public NullEntityReferenceException(String message) {
