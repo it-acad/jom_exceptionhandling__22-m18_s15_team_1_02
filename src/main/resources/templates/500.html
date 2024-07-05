@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>500 Internal Server Error</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+<div class="container text-center my-auto">
+    <h1 class="display-4">500 Internal Server Error</h1>
+    <div th:if="${errorMessage == null or errorMessage.isEmpty()}">
+        <p class="lead">Sorry, something went wrong on the server. You will be redirected to the home page in 5 seconds.</p>
+    </div>
+    <div th:if="${errorMessage != null and !errorMessage.isEmpty()}">
+        <p class="text-danger" th:text="${errorMessage}"></p>
+    </div>
+    <a href="/home">Go to Home page </a>
+</div>
+</body>
+</html>
